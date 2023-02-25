@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora de tiempo de transferencia</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Calculadora de tiempo de transferencia</h1>
+		<form>
+			<label for="fileSize">Tamaño del archivo:</label>
+			<input type="number" id="fileSize" name="fileSize" value="0">
+			<select id="fileSizeUnit" name="fileSizeUnit">
+				<option value="B">B</option>
+				<option value="KB">KB</option>
+				<option value="MB">MB</option>
+				<option value="GB">GB</option>
+			</select>
+			<br>
+			<label for="transferRate">Tasa de transferencia:</label>
+			<input type="number" id="transferRate" name="transferRate" value="0">
+			<select id="transferRateUnit" name="transferRateUnit">
+				<option value="B/s">B/s</option>
+				<option value="KB/s">KB/s</option>
+				<option value="MB/s">MB/s</option>
+				<option value="GB/s">GB/s</option>
+			</select>
+			<br>
+			<button type="button" onclick="calculateTransferTime()">Calcular</button>
+			<br>
+			<label for="transferTime">Tiempo de transferencia:</label>
+			<input type="text" id="transferTime" name="transferTime" readonly>
+		</form>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

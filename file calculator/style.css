@@ -1,0 +1,39 @@
+.container {
+	width: 80%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+h1 {
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+label {
+	flex-basis: 30%;
+}
+
+input[type="number"] {
+	flex-basis: 50%;
+}
+
+select {
+	flex-basis: 15%;
+}
+
+button {
+	margin-left: auto;
+	display: block;
+}
+
+input[type="text"] {
+	margin-top: 10px;
+}
